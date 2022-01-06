@@ -6,8 +6,8 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: "index_bundle.js",
     library: {
-        name: "Domputer",
-        type: "umd"
+      name: "Domputer",
+      type: "umd",
     },
   },
   module: {
