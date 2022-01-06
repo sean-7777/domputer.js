@@ -1,0 +1,28 @@
+{
+  "name": "domputer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-7777/domputer.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sean-7777/domputer.js/issues"
+  },
+  "homepage": "https://github.com/sean-7777/domputer.js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "jest": "^27.4.7",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

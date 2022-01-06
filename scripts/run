@@ -1,0 +1,21 @@
+from subprocess import run
+from sys import argv
+from os.path import exists, dirname, realpath
+from os import environ
+
+if len(argv) != 2:
+    print("Invalid argument, wrong length")
+    exit(1)
+
+scriptFile = f"{dirname(realpath(__file__))}/{argv[1]}"
+
+if not exists(scriptFile):
+    print("Script nonexistant.")
+    exit(1)
+
+with open(scriptFile) as f:
+    script = f.readline()
+    if "GITPOD_WORKSPACE_ID" in environ:
+        run(f"cd /workspace/domputer.js && {script}", shell=True)
+    else:
+        run(script, shell=True)
